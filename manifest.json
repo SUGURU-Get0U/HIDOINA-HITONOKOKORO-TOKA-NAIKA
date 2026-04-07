@@ -2,6 +2,18 @@
     "manifest_version" : 3,
         "name": "Naoya-Zenin",
         "version": "0.1.0",
+        "icons": {
+            "16": "public/naoya/yuta_bum.png",
+            "32": "public/naoya/yuta_bum.png",
+            "48": "public/naoya/yuta_bum.png",
+            "128": "public/naoya/yuta_bum.png"
+        },
+        "action": {
+            "default_icon": {
+                "16": "public/naoya/yuta_bum.png",
+                "32": "public/naoya/yuta_bum.png"
+            }
+        },
 
         "content_scripts": [
             {
@@ -12,7 +24,7 @@
     ],
         "web_accessible_resources": [
             {
-            "resources" : ["public/naoya/pic.jpg"],
+            "resources" : ["public/naoya/*.jpg"],
             "matches" : ["<all_urls>"]
         }
     ]
